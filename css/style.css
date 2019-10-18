@@ -506,10 +506,12 @@ footer{
     }
     .two>section{
         width: 90%;
+        height: 160vw;
     }
     .two>section>div{
         padding: 2%;
         display: flex;
+        height:160vw;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
@@ -548,15 +550,21 @@ footer{
     }
     .three>section>div>h3{
         margin-bottom: 5%;
+        font-size: 1.4rem;
     }
     .three>section>div>p {
-        width: 75%;
+        width: 80%;
         font-size: 0.9rem;
     }
+    .three>section>div>div div:nth-of-type(1),
+    .three>section>div>div div:nth-of-type(3){
+        display: none;
+     }
     .three>section>div>div>div:nth-of-type(2) ul li{
         font-size: 0.7rem;
         letter-spacing: 0;
     }
+
     .four h2{
         padding: 15%;
     }
