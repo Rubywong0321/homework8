@@ -7,3 +7,6 @@ $(function(){
             $(this).addClass('active'). siblings ('.active').removeClass('active');
         });
     });
+$(document).ready(function(){
+    $('.slider').bxSlider();
+  });

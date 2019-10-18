@@ -255,46 +255,48 @@ body{
     border: 2px #5d5d5d solid;
     background-color: rgba(255, 255, 255, 0.7);
 }
-.four>section>div:nth-of-type(1)>section .product>div h3{
+.four>section>div:nth-of-type(1)>section .product>div>h3{
     font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 20px;
     line-height: 1.2;
 }
-.four>section>div:nth-of-type(1)>section .product>div p{
+.four>section>div:nth-of-type(1)>section .product>div>p{
     line-height: 1.4;
     font-size: 0.8rem;
     color: #5d5d5d;
     padding: 3%
 }
-.four>section>div:nth-of-type(1)>section .product>div a{
-    font-size: 1rem;
-    color: #5d5d5d;
+.four>section>div:nth-of-type(1)>section .product>div>a{
     text-align: right;
-    margin-left: 80%;
-    line-height: 2rem;
+    display: block;
+    width: 90%;
+    margin: 0 auto;
 }
-.four>section>div:nth-of-type(1)>section .product>div span{
-    font-size: 0.8rem;
-    font-style: italic;
+.four>section>div:nth-of-type(1)>section .product>div>div{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    align-items: baseline;
+}
+.four>section>div:nth-of-type(1)>section .product>div>div span{
+    text-align: right;
+    font-size: 0.9rem;
     color: #999;
     position: relative;
-    margin-left: 10%;
+    font-style: italic;
 }
-.four>section>div:nth-of-type(1)>section .product>div span:before{
+.four>section>div:nth-of-type(1)>section .product>div>div span:before{
     content: "";
     border: 1px #999 solid;
-    width: 100%;
-    display: inline-block;
+    width: 65%;
     position: absolute;
-    top: 40%;
+    top: 45%;
 }
-.four>section>div:nth-of-type(1)>section .product>div em{
-    font-size: 1.6rem;
+.four>section>div:nth-of-type(1)>section .product>div>div em{
+    font-size: 1.4rem;
     text-align: right;
-    display: inline;
-    margin-left: 2%;
-    
 }
 .four>section>div:nth-of-type(1)>section .photo{
     width: 600px;
@@ -336,12 +338,148 @@ footer{
     background-color: #d0efde;
     padding: 5% 0;
 }
-@media screen and (max-width:375px){
+@media screen and (max-width:1199px){
+    .one>section{
+        width: 100%;
+        height: 50vw; 
+        padding: 3vw 0 ;
+    }
+    .one>section>div:nth-of-type(1){
+        width: 17vw;
+    }
+    .one>section h2{
+        font-size: 2rem;
+    }
+    .one>section h1{
+        font-weight: 800;
+
+    }
+    .one>section>div:nth-of-type(2){
+        width: 12vw;
+    }
+    .one>section>div:nth-of-type(3)>a{
+        font-size: 1rem;
+    }
+    .one>section>div:nth-of-type(3)> div{
+       width: 13vw;
+
+    }
+    .two>section{
+        height: 50vw;
+        width: 90%;
+    }
+    .two>section>div{
+        top: -3vw;
+        height: 50vw;
+        padding: 5vw;
+        padding-left: 58vw;
+    }
+    .two>section>div>div:nth-of-type(1){
+        width: 70vw;
+        top: 15%;
+        left: -3vw;
+    }
+    .two>section>div>div:nth-of-type(1) iframe{
+        width:60vw;
+        height:35vw;
+    }
+    .two>section>div>div:nth-of-type(2) h2{
+        font-size: 1.3rem;
+        margin-bottom: 10%;
+    }
+    .two>section>div>div:nth-of-type(2) p{
+        line-height: 2;
+        font-size: 0.8rem;
+    } 
+    .three>section{
+        width: 90%;
+        padding: 4vw;
+    }
+    .three>section>div>div{
+        width: 60vw;
+        line-height: 2;
+        font-size: 0.9rem;
+    }
+    .three>section>div>p {
+        width: 60vw;
+    }
+    .three>section>div>div>div:nth-of-type(2){
+        margin: 0 3vw;
+    }
+    .three>section>div>div>div:nth-of-type(2) ul li{
+        font-size: 0.8rem;
+        letter-spacing: 0;
+    }
+    .four>section{
+        width: 100%;
+    }
+    .four>h2{
+        text-align: center;
+        font-size: 1.5rem;
+        color: #a2a2a2;
+    }
+    /*定位*/
+    .four>section>div:nth-of-type(1){
+        margin-bottom: 2vw;
+    }
+    .four>section>div:nth-of-type(1)>section .product{
+        width: 45vw;
+    }
+    .four>section:nth-child(even)>div:nth-of-type(1)>.wrapper{
+        left: 0%;
+    }
+    .four>section:nth-child(even)>div:nth-of-type(1)>section .product{
+        left: 0;
+    }
+    .four>section:nth-child(even)>div:nth-of-type(1)>section .photo{
+        right: 0;
+    }
+    .four>section:nth-child(odd)>div:nth-of-type(1)>.wrapper{
+        right: 0;
+    }
+    .four>section:nth-child(odd)>div:nth-of-type(1)>section .product{
+        right:0;
+    }
+    .four>section:nth-child(odd)>div:nth-of-type(1)>section .photo{
+        left: 5%;
+        z-index: 1;
+    }
+    /*style*/
+    .four>section>div:nth-of-type(1)>.wrapper{
+        width: 45vw;
+    }
+    .four>section>div:nth-of-type(1)>section .product>div{
+        padding: 2vw;
+    }
+    .four>section>div:nth-of-type(1)>section .product>div>p{
+        line-height: 1.3;
+        font-size: 0.7rem;
+        color: #5d5d5d;
+        padding: 1vw;
+    }
+    .four>section>div:nth-of-type(1)>section .photo{
+        width: 60vw;
+        height: 40vw;
+    }
+    .four>section>div:nth-of-type(1)>section .photo img{
+        width: 100%;
+        top: -6vw;
+
+    }
+    .four>section>div:nth-of-type(2) ul li a{
+        width: 15vw;
+        height: 15vw;
+
+    }
+
+}
+@media screen and (max-width:700px){
     .one>section{
         width: 100%;
         background-size: cover;
         background-position: left;
-        height: 500px;  
+        height: 500px; 
+        overflow: hidden;
     }
     .one>section>div:nth-of-type(1){
         width: 40%;
@@ -364,8 +502,7 @@ footer{
         margin-bottom: 5%;
     }
     .one>section>div:nth-of-type(3)> div{
-       width: 27%;
-
+       width: 25%;
     }
     .two>section{
         width: 90%;
@@ -421,7 +558,6 @@ footer{
         letter-spacing: 0;
     }
     .four h2{
-       
         padding: 15%;
     }
     .four>section{
@@ -442,7 +578,7 @@ footer{
     }
     .four>section:nth-child(even)>div:nth-of-type(1)>section .product{
         top: 60%;
-        left: 0;
+        left: 0;        
     }
     .four>section:nth-child(even)>div:nth-of-type(1)>section .photo{
         right: 0%;
@@ -481,25 +617,25 @@ footer{
     .four>section>div:nth-of-type(1)>section .product>div p{
         display: none;
     }
-    .four>section>div:nth-of-type(1)>section .product>div a{
-        font-size: 0.9rem;
-        color: #5d5d5d;
-        margin-left: 3%;
-    }
     .four>section>div:nth-of-type(1)>section .product>div a:before{
         content: "see ";
     }
-    .four>section>div:nth-of-type(1)>section .product>div span{
-        font-size: 0.8rem;
-        font-style: italic;
+    .four>section>div:nth-of-type(1)>section .product>div>div{
+        grid-template-columns: 4fr 5fr;
+        align-items: baseline;
+    }
+    .four>section>div:nth-of-type(1)>section .product>div>div span{
+        text-align: right;
+        font-size: 0.7rem;
         color: #999;
         position: relative;
-        margin-left: 0;
+        font-style: italic;
     }
-    .four>section>div:nth-of-type(1)>section .product>div em{
-        font-size: 1.1rem;
-        margin-left: 2%;
-
+    .four>section>div:nth-of-type(1)>section .product>div>div span:before{
+        width: 90%;
+    }
+    .four>section>div:nth-of-type(1)>section .product>div>div em{
+        font-size: 1rem;
     }
     .four>section>div:nth-of-type(1)>section .photo{
         width: 100%;
@@ -509,8 +645,6 @@ footer{
         top: 0;
     }
     .four>section>div:nth-of-type(2) ul {
-        display: flex;
-        justify-content:space-around;
         display: none;
 
     }
