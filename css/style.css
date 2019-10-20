@@ -301,7 +301,7 @@ body{
 .four>section>div:nth-of-type(1)>section .photo{
     width: 600px;
     height: 400px;
-    background-color: #747474; 
+
     overflow: hidden;
 }
 .four>section>div:nth-of-type(1)>section .photo img{
@@ -320,8 +320,8 @@ body{
     
 }
 .four>section>div:nth-of-type(2) ul li a{
-    width: 150px;
-    height: 150px;
+    width: 15vw;
+    height: 15vw;
     display: inline-block;
     background-color: #999;
     overflow: hidden;
@@ -506,12 +506,12 @@ footer{
     }
     .two>section{
         width: 90%;
-        height: 160vw;
+        height: 500px;
     }
     .two>section>div{
         padding: 2%;
         display: flex;
-        height:160vw;
+        height: 500px;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
@@ -564,7 +564,6 @@ footer{
         font-size: 0.7rem;
         letter-spacing: 0;
     }
-
     .four h2{
         padding: 15%;
     }
@@ -574,8 +573,9 @@ footer{
     }
     /*定位*/
     .four>section>div:nth-of-type(1){
-        margin:  25% auto;
+        margin:  6% auto;
         height: 400px;
+        margin-top: 35%;
     }
     .four>section>div:nth-of-type(1)>section .product{
         width: 75%;
@@ -647,15 +647,16 @@ footer{
     }
     .four>section>div:nth-of-type(1)>section .photo{
         width: 100%;
-        height: 300px;
+        height: 80vw;
     }
     .four>section>div:nth-of-type(1)>section .photo img{
         top: 0;
     }
     .four>section>div:nth-of-type(2) ul {
-        display: none;
+      margin-bottom: 5%;
 
     }
+
     footer{
         padding: 20%;
     }
