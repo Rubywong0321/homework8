@@ -264,14 +264,18 @@ body{
 .four>section>div:nth-of-type(1)>section .product>div>p{
     line-height: 1.4;
     font-size: 0.8rem;
-    color: #5d5d5d;
+    color: #8e8e8e;
     padding: 3%
 }
 .four>section>div:nth-of-type(1)>section .product>div>a{
+    color: #fff;
     text-align: right;
-    display: block;
-    width: 90%;
-    margin: 0 auto;
+    display: inline-block;
+    padding: 1% 5%;
+    background-color: #3dad3d;
+    margin-left: 60%;
+    margin-bottom: 4%;
+    transform: skewX(-10deg);
 }
 .four>section>div:nth-of-type(1)>section .product>div>div{
     width: 95%;
@@ -334,6 +338,7 @@ footer{
     width: 100%;
     background-color: #d0efde;
     padding: 5% 0;
+    box-sizing: border-box;
 }
 @media screen and (max-width:1199px){
     .one>section{
@@ -501,10 +506,6 @@ footer{
     .one>section>div:nth-of-type(3)> div{
        width: 25%;
     }
-    
-    
-    
-    
     .two>section{
         width: 90%;
         height: 500px;
@@ -542,13 +543,7 @@ footer{
         line-height: 1.7;
         text-align: left;
         font-size: 0.9rem;
-    } 
-    
-    
-    
-    
-    
-    
+    }
     .three>section{
         width: 100%;
     }
@@ -635,13 +630,14 @@ footer{
     .four>section>div:nth-of-type(1)>section .product>div p{
         display: none;
     }
-    .four>section>div:nth-of-type(1)>section .product>div a:before{
-        content: "see ";
+    .four>section>div:nth-of-type(1)>section .product>div>a{
+        font-size: 0.8rem;
     }
     .four>section>div:nth-of-type(1)>section .product>div>div{
         grid-template-columns: 4fr 5fr;
         align-items: baseline;
     }
+    
     .four>section>div:nth-of-type(1)>section .product>div>div span{
         text-align: right;
         font-size: 0.7rem;
@@ -674,7 +670,7 @@ footer{
 
     }
     footer{
-        padding: 20%;
+        padding: 10%;
     }
 
   
