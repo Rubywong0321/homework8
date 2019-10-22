@@ -19,7 +19,6 @@ main>.two_b{
 }
 .two_b>section{
     width: 1024px;
-    background-color: #fff;
     padding: 5%;
     height: auto;
     box-sizing: border-box;
@@ -98,7 +97,7 @@ main>.two_b{
     }
     .two_b>section{
         width: 90%;
-        padding: 5%;
+        padding: 0;
 
     }
     .two_b>section>h3{
