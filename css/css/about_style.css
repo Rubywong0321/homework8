@@ -1,0 +1,125 @@
+
+.one_b>section>div:nth-of-type(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.one_b>section>div:nth-of-type(3)>p{
+    width: 60%;
+    color: #fff;
+    line-height: 2;
+}
+.one_b>section>div:nth-of-type(3)> div{
+   width: 5%;  
+}
+main>.two_b{
+    height: auto;
+    padding: 2%;
+    box-sizing: border-box;
+}
+.two_b>section{
+    width: 1024px;
+    padding: 5%;
+    height: auto;
+    box-sizing: border-box;
+}
+.two_b>section>h3{
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.two_b>section>p{
+    line-height: 2;
+    width: 65%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.three_b{
+    background-image: url(../img/grassland.jpg);
+    background-position: center;
+    background-size:cover;
+}
+.three_b>section{
+    background-color: rgba(0,0,0,0.4);
+}
+.three_b>section>div{
+    width: 1024px;
+    margin: 0 auto;
+    padding: 5%;
+    color: #fff;
+    box-sizing: border-box;
+}
+.three_b>section>div h3{
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 5%;
+}
+.back{
+    width: 100%;
+    padding: 5%;
+    box-sizing: border-box;
+}
+.back>div>a{
+    font-size: 1.5rem;
+    line-height: 8vw;
+    text-align: center;
+    width: 8vw;
+    height: 8vw;
+    display: block;
+    border-radius: 50%;
+    background-color: #d0efde;
+    margin: 0 auto;
+}
+@media screen and (max-width:1199px){
+    .two_b>section{
+        width: 80%;
+    }
+    .three_b>section>div{
+        width: 75%;
+    }
+
+}
+@media screen and (max-width:800px){
+    .one_b>section>div:nth-of-type(3)>p{
+        width: 90%;
+        font-size: 0.8rem;
+    }
+
+  .one_b>section>div:nth-of-type(3)> div{
+       display: none;
+    }
+    main>.two_b{
+        padding: 10% 3%;
+        box-sizing: border-box;;
+    }
+    .two_b>section{
+        width: 90%;
+        padding: 0;
+
+    }
+    .two_b>section>h3{
+        font-size: 1.6rem;
+        margin-bottom: 6%;
+    }
+    .two_b>section>p{
+        width: 100%;
+    }
+
+    .three_b>section>div{
+        width: 85%;
+        padding-top: 20%;
+    }
+    .three_b>section>div h3{
+        margin-bottom: 15%;
+    }
+    .back>div>a{
+        font-size: 1rem;
+        line-height: 15vw;
+        width: 15vw;
+        height: 15vw;
+    }
+
+}
